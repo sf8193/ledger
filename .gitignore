@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.env*
+!.env.example
+data/
+*.db
+.DS_Store
+screenshots/
+screenshot*.mjs
+.secrets
+e2e/.auth-state.json
+test-results/

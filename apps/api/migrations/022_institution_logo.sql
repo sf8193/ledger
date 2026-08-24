@@ -1,0 +1,2 @@
+ALTER TABLE plaid_items ADD COLUMN IF NOT EXISTS logo TEXT;
+ALTER TABLE plaid_items ADD COLUMN IF NOT EXISTS primary_color TEXT;

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Ledger</title>
+    <meta name="theme-color" content="#0a0e12" />
+    <meta name="description" content="Self-hosted personal finance for your household" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Ledger" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Ledger — Join a Household" />
+    <meta property="og:description" content="You've been invited to share finances on Ledger" />
+    <meta property="og:image" content="/og-invite.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter / iMessage -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ledger — Join a Household" />
+    <meta name="twitter:description" content="You've been invited to share finances on Ledger" />
+    <meta name="twitter:image" content="/og-invite.png" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js');
+      }
+    </script>
+  </body>
+</html>

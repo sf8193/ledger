@@ -1,0 +1,10 @@
+-- Credit card details from Plaid Liabilities
+ALTER TABLE accounts ADD COLUMN credit_limit NUMERIC;
+ALTER TABLE accounts ADD COLUMN apr_purchase NUMERIC;
+ALTER TABLE accounts ADD COLUMN apr_cash NUMERIC;
+ALTER TABLE accounts ADD COLUMN last_payment_amount NUMERIC;
+ALTER TABLE accounts ADD COLUMN last_payment_date TEXT;
+ALTER TABLE accounts ADD COLUMN minimum_payment NUMERIC;
+ALTER TABLE accounts ADD COLUMN next_payment_due_date TEXT;
+ALTER TABLE accounts ADD COLUMN last_statement_balance NUMERIC;
+ALTER TABLE accounts ADD COLUMN is_overdue BOOLEAN;
